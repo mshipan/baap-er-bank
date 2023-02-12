@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap er Bank Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="md:h-screen flex items-center">
+        <div class="flex flex-col items-center justify-center w-full md:h-[70vh] bg-teal-200 py-11 md:py-0">
+            <h1 class="text-5xl text-violet-500	mb-11 text-center">Let's Get Some <span
+                    class="font-extrabold text-violet-700">Money</span> </h1>
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-5 text-white">
+                <div class="py-7 pl-7 pr-48 bg-green-400 rounded-xl">
+                    <h5 class="text-xl">Total Deposit</h5>
+                    <h4 class="text-3xl">$<span id="deposit-feild">00</span></h4>
+                </div>
+                <div class="py-7 pl-7 pr-48 bg-pink-400 rounded-xl">
+                    <h5 class="text-xl">Total Withdraw</h5>
+                    <h4 class="text-3xl">$<span id="withdraw-feild">00</span></h4>
+                </div>
+                <div class="py-7 pl-7 pr-48 bg-rose-400 rounded-xl">
+                    <h5 class="text-xl">Total Balance</h5>
+                    <h4 class="text-3xl">$<span id="balance-feild">1200</span></h4>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-6 mt-16 justify-center">
+                <div class="flex flex-col gap-3 md:w-[30rem] py-9 pl-9 pr-24 bg-blue-500 rounded-xl">
+                    <h1 class="text-3xl text-white">Please Deposit</h1>
+                    <input type="text" name="" id="deposit-input" class="p-1" placeholder="Amount You Want to Deposit">
+                    <!-- Deposit Button -->
+                    <div>
+                        <button id="btn-deposit" class="block bg-blue-800 text-white py-2 px-9 rounded-xl hover:bg-indigo-200 hover:text-black" type="submit">Deposit</button>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col gap-3 md:w-[30rem] py-9 pl-9 pr-24 bg-violet-500 rounded-xl">
+                    <h1 class="text-3xl text-white">Please Withdraw</h1>
+                    <input type="text" name="" id="withdraw-input" class="p-1" placeholder="Amount You Want to Withdraw">
+                    <!-- Withdraw Button -->
+                    <div>
+                        <button id="btn-withdraw" class="block bg-blue-800 text-white py-2 px-9 rounded-xl hover:bg-indigo-200 hover:text-black">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/login-form.js"></script>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>

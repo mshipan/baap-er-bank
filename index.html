@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap er Bank Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="h-screen flex items-center">
+        <div class="flex flex-col items-center justify-center w-full h-[70vh] bg-yellow-200">
+            <h1 class="text-5xl text-violet-500	mb-11 text-center">Welcome to my <span
+                    class="font-extrabold text-violet-700">Baap-Er-Bank</span> </h1>
+            <div class="flex md:justify-center bg-indigo-200 md:w-[50%]">
+                <div class="flex flex-col gap-3 p-7 md:w-[50%]">
+                    <h5 class="text-2xl text-violet-800 font-bold">Please Login</h5>
+                    <input type="email" name="" id="emailFeild" class="p-1" placeholder="Your Email">
+                    <input type="password" name="" id="passwordFeild" class="p-1" placeholder="Password">
+                    <div>
+                        <button id="btn-submit" class="py-2 px-9 rounded-xl text-white bg-blue-300 hover:bg-blue-500">Log in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/login-form.js"></script>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
